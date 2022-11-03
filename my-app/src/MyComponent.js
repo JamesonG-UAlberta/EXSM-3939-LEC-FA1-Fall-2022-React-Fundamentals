@@ -1,3 +1,15 @@
+import React from 'react';
+
+class MyComponent extends React.Component {
+    render() {
+        return <div>
+            <p>Hello, World!</p>
+        </div>;
+    }
+}
+
+
+/*
 function MyComponent() {
     return (
         <div>
@@ -5,4 +17,5 @@ function MyComponent() {
         </div>
     );
 }
+*/
 export default MyComponent;
