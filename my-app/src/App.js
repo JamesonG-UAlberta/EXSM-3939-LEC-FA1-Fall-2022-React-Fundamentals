@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import MyComponent from './MyComponent';
+import MyComponent from './Components/MyComponent';
 
 /*
 Two syntaxes for React components: Functional and Class-Based.
@@ -13,20 +13,17 @@ function App() {
     /* JSX snippets need a single root element (in this case the div). */
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <MyComponent />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn How to Make React Components
-        </a>
       </header>
+      <main>
+        <MyComponent />
+      </main>
+      <aside>
+        <p>Created as a demo for EXSM 3939 at the University of Alberta.</p>
+      </aside>
     </div>
   );
 }
