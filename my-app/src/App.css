@@ -19,6 +19,7 @@ main {
   background-color: #529064;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 aside {
   position: fixed;
@@ -26,4 +27,11 @@ aside {
   left: 1rem;
   color: #ffdb05;
   font-weight: bold;
+}
+
+.exampleComponent {
+  width: 30%;
+  margin: 1rem;
+  border: 3px black dashed;
+  border-radius: 2rem;
 }

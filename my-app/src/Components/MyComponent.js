@@ -15,7 +15,7 @@ class MyComponent extends React.Component {
 function MyComponent() {
     let myVariable = "Everyone";
     return (
-        <div>
+        <div className="exampleComponent">
             <p>Hello, {myVariable}!</p>
         </div>
     );

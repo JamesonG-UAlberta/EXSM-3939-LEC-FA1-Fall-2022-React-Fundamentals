@@ -22,7 +22,12 @@ function App() {
         </p>
       </header>
       <main>
+        <div className='exampleComponent'></div>
         <MyComponent />
+        <div className='exampleComponent'></div>
+        <div className='exampleComponent'></div>
+        <div className='exampleComponent'></div>
+        <div className='exampleComponent'></div>
       </main>
       <aside>
         <p>Created as a demo for EXSM 3939 at the University of Alberta.</p>
