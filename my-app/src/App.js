@@ -14,12 +14,8 @@ function App() {
     /* JSX snippets need a single root element (in this case the div). */
     <div className="App">
       <header>
-      <img src={logo} className="logo large" alt="logo" />
-      <img src={logo} className="logo medium" alt="logo" />
-      <img src={logo} className="logo small" alt="logo" />
-        <p>
-          EXSM3939 React
-        </p>
+        {["small", "medium", "large"].map((x) => <img src={logo} key={x} className={`logo ${x}`} alt="logo" />)}
+        <h1>EXSM3939 React</h1>
       </header>
       <main>
         <div className='exampleComponent'></div>
