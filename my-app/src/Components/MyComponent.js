@@ -1,22 +1,19 @@
-/*
-import React from 'react';
-
-class MyComponent extends React.Component {
-
-    render() {
-        return <div>
-            <p>Hello, World!</p>
-        </div>;
-    }
-}
-*/
-
+import {useState} from 'react';
 
 function MyComponent() {
-    let myVariable = "Everyone";
+
+    // const ['variable name', 'method name to set the variable'] = useState('initial value');
+    // State variables automatically trigger refreshes of any elements that reference them upon a change. 
+    // React will NOT refresh elements automatically that are reading "normal" variables.
+    // State changes happen asynchronously, meaning if you reference the old value of a state variable improperly, you can wind up displaying erroneous data.
+    const [counter, setCounter] = useState(1);
+
     return (
         <div className="exampleComponent">
-            <p>Hello, {myVariable}!</p>
+            <p>The counter value is currently {counter}!</p>
+            {/* Similar to vanilla JavaScript, event listeners can be (and typically are) declared inline with the element to which they are attached. */}
+            {/* If you want to update a state variable to something based on the old value, ensure to pass it into the update method as an argument. */}
+            <button onClick={() => {setCounter((oldCounter) => oldCounter+1)}}>Increment the Counter</button>
         </div>
     );
 }
