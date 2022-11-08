@@ -3,6 +3,7 @@ import './App.css';
 import './ReactLogo.css';
 import ExampleCounter from './Components/ExampleCounter';
 import ExampleText from './Components/ExampleText';
+import ExampleList from './Components/ExampleList';
 /*
 Two syntaxes for React components: Functional and Class-Based.
 Class-Based is the "old" style, Functional is the "new" style. 
@@ -20,7 +21,7 @@ function App() {
       <main>
         <ExampleText />
         <ExampleCounter />
-        <div className='exampleComponent'></div>
+        <ExampleList />
         <div className='exampleComponent'></div>
         <div className='exampleComponent'></div>
         <div className='exampleComponent'></div>
