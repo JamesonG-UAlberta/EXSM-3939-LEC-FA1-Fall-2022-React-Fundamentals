@@ -1,0 +1,55 @@
+
+.logo {
+  height: 25vmin;
+  pointer-events: none;
+  position: relative;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .large {
+    z-index: 3;
+    animation: spinning-large infinite 10s linear;
+    position: absolute;
+    right: 5rem;
+  }
+  .medium {
+    z-index: 2;
+    animation: spinning-medium infinite 8s linear;
+    filter: brightness(0.7);
+    position: absolute;
+    right: 5rem;
+  }
+  .small {
+    z-index: 1;
+    animation: spinning-small infinite 6s linear;
+    filter: brightness(0.4);
+    position: absolute;
+    right: 5rem;
+  }
+}
+
+
+@keyframes spinning-large {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinning-medium {
+  from {
+    transform: rotate(0deg) scale(0.9);
+  }
+  to {
+    transform: rotate(-360deg) scale(0.9);
+  }
+}
+@keyframes spinning-small {
+  from {
+    transform: rotate(0deg) scale(0.8);
+  }
+  to {
+    transform: rotate(360deg) scale(0.8);
+  }
+}

@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './ReactLogo.css';
 import MyComponent from './Components/MyComponent';
 
 /*
@@ -12,10 +13,12 @@ function App() {
   return (
     /* JSX snippets need a single root element (in this case the div). */
     <div className="App">
-      <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
+      <header>
+      <img src={logo} className="logo large" alt="logo" />
+      <img src={logo} className="logo medium" alt="logo" />
+      <img src={logo} className="logo small" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          EXSM3939 React
         </p>
       </header>
       <main>
