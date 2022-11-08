@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import './ReactLogo.css';
-import MyComponent from './Components/MyComponent';
+import ExampleCounter from './Components/ExampleCounter';
 
 /*
 Two syntaxes for React components: Functional and Class-Based.
@@ -19,7 +19,7 @@ function App() {
       </header>
       <main>
         <div className='exampleComponent'></div>
-        <MyComponent />
+        <ExampleCounter />
         <div className='exampleComponent'></div>
         <div className='exampleComponent'></div>
         <div className='exampleComponent'></div>
