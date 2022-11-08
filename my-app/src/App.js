@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import './ReactLogo.css';
 import ExampleCounter from './Components/ExampleCounter';
-
+import ExampleText from './Components/ExampleText';
 /*
 Two syntaxes for React components: Functional and Class-Based.
 Class-Based is the "old" style, Functional is the "new" style. 
@@ -18,7 +18,7 @@ function App() {
         <h1>EXSM3939 React</h1>
       </header>
       <main>
-        <div className='exampleComponent'></div>
+        <ExampleText />
         <ExampleCounter />
         <div className='exampleComponent'></div>
         <div className='exampleComponent'></div>
