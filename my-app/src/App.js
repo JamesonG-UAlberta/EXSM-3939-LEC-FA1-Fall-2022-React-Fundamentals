@@ -4,6 +4,8 @@ import './ReactLogo.css';
 import ExampleCounter from './Components/ExampleCounter';
 import ExampleText from './Components/ExampleText';
 import ExampleList from './Components/ExampleList';
+import ExampleListClass from './Components/ExampleListClass';
+import ExampleLifeCycle from './Components/ExampleLifeCycle';
 /*
 Two syntaxes for React components: Functional and Class-Based.
 Class-Based is the "old" style, Functional is the "new" style. 
@@ -22,9 +24,9 @@ function App() {
         <ExampleText />
         <ExampleCounter />
         <ExampleList />
-        <div className='exampleComponent'></div>
-        <div className='exampleComponent'></div>
-        <div className='exampleComponent'></div>
+        <ExampleLifeCycle />
+        <ExampleCounter />
+        <ExampleListClass />
       </main>
       <aside>
         <p>Created as a demo for EXSM 3939 at the University of Alberta.</p>
