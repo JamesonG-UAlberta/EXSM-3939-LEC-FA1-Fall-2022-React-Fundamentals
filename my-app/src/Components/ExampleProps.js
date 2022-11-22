@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import './ExampleList.css';
+import ExamplePropMap from './ExamplePropMap';
 
 function ExampleProps(props) {
     return (
@@ -7,9 +8,9 @@ function ExampleProps(props) {
             <p>Props example.</p>
             <p>{props.example??"Undefined"}</p>
 
-            <ul>
-                {props.array?.map((x,y) => <li key={y}>{x}</li>)}
-            </ul>
+
+                {props.array?.map((x,y) => <ExamplePropMap key={y} valueToDisplay={x} />)}
+
         </div>
     );
 }
