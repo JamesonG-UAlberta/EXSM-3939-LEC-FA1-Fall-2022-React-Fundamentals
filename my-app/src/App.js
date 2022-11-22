@@ -13,7 +13,8 @@ import ExampleProps from './Components/ExampleProps';
 import {useState} from 'react';
 
 function App() {
-  
+  const [thingsToRender, setThingsToRender] = useState(["Test", "Hello", "123", "A Thing", "More Things", "Done"]);
+
   return (
     /* JSX snippets need a single root element (in this case the div). */
     <div className="App">
@@ -22,12 +23,16 @@ function App() {
         <h1>EXSM3939 React</h1>
       </header>
       <main>
+        {thingsToRender.map(x => <ExampleProps example={x} array={[Math.floor(Math.random()*100), Math.floor(Math.random()*100), Math.floor(Math.random()*100)]} />)}
+
+      {/*
         <ExampleProps example="Testing" array={[1, 10, 100, 1000]}/>
         <ExampleProps example="Hello, World!" />
         <ExampleProps example="This is a prop value!" />
         <ExampleProps example="12345" />
         <ExampleProps array={["Hello","World","Today","Is","Great"]} />
         <ExampleProps />
+  */}
       </main>
       <aside>
         <p>Created as a demo for EXSM 3939 at the University of Alberta.</p>
