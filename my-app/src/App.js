@@ -14,6 +14,11 @@ import {useState} from 'react';
 
 function App() {
   const [thingsToRender, setThingsToRender] = useState(["Test", "Hello", "123", "A Thing", "More Things", "Done"]);
+  const [stateForChild, setStateForChild] = useState("Initial value");
+
+  const doSomethingInApp = () => {
+    setStateForChild((old) => old+"!");
+  }
 
   return (
     /* JSX snippets need a single root element (in this case the div). */
@@ -23,16 +28,12 @@ function App() {
         <h1>EXSM3939 React</h1>
       </header>
       <main>
-        {thingsToRender.map(x => <ExampleProps example={x} array={[Math.floor(Math.random()*100), Math.floor(Math.random()*100), Math.floor(Math.random()*100)]} />)}
-
-      {/*
-        <ExampleProps example="Testing" array={[1, 10, 100, 1000]}/>
-        <ExampleProps example="Hello, World!" />
-        <ExampleProps example="This is a prop value!" />
-        <ExampleProps example="12345" />
-        <ExampleProps array={["Hello","World","Today","Is","Great"]} />
-        <ExampleProps />
-  */}
+        <ExampleCallback callback={doSomethingInApp}  />
+        <ExampleCallback anExampleProp={stateForChild} />
+        <ExampleCallback anExampleProp={stateForChild} />
+        <ExampleCallback anExampleProp={stateForChild} />
+        <ExampleCallback anExampleProp={stateForChild} />
+        <ExampleCallback anExampleProp={stateForChild} />
       </main>
       <aside>
         <p>Created as a demo for EXSM 3939 at the University of Alberta.</p>
